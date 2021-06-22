@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+.container-grid {
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.box {
+}
+
+.red {
+  background-color: red;
+  grid-column: span 4;
+  grid-row: 1 / span 2;
+  height: 200px;
+}
+
+.blue {
+  background-color: blue;
+  grid-column: span 2;
+}
+
+.yellow {
+  background-color: yellow;
+  grid-column: 3/5;
+}
+
+.green {
+  background-color: green;
+  grid-column: 1/3;
+}
+
+.black {
+  background-color: black;
+  grid-column: 3/5;
+}
+
+.white {
+  background-color: white;
+  grid-column: 1/3;
+}
+
+.orange {
+  background-color: orange;
+  grid-column: 3/5;
+}
+
+.brown {
+  background-color: brown;
+  grid-column: 1/5;
+  grid-row: 5 / span 2;
+  height: 200px;
+}
+
+.purple {
+  background-color: yellow;
+  grid-column: 1/2;
+}
+
+.light-green {
+  background-color: BLACK;
+  grid-column: 2/3;
+}
+
+.light-blue {
+  background-color: BLUE;
+  grid-column: 3/4;
+}
+
+.light-red {
+  background-color: red;
+  grid-column: 4/5;
+}
+
+.light-born {
+  background-color: black;
+  grid-column: 1/5;
+}
+
+@media (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(22, 1fr);
+  }
+
+  .red {
+    background-color: red;
+    grid-column: span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .blue {
+    background-color: blue;
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+
+  .yellow {
+    background-color: yellow;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .green {
+    background-color: green;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .black {
+    background-color: black;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .white {
+    background-color: white;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .orange {
+    background-color: orange;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .brown {
+    background-color: brown;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .purple {
+    background-color: yellow;
+    grid-column: 1/2;
+    grid-row: span 1;
+  }
+
+  .light-green {
+    background-color: BLACK;
+    grid-column: 2/3;
+    grid-row: span 1;
+  }
+
+  .light-blue {
+    background-color: BLUE;
+    grid-column: 1/2;
+    grid-row: span 1;
+  }
+
+  .light-red {
+    background-color: red;
+    grid-column: 2/3;
+    grid-row: span 1;
+  }
+
+  .light-born {
+    background-color: black;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
